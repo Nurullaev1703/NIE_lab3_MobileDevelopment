@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".TestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="45sp"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/hintName"
+            android:text=""
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start"
+            android:importantForAutofill="no"
+            android:minHeight="48dp"
+            android:text="@string/gender"
+            android:textColor="#ffffff"
+            android:textColorHint="#546E7A"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/man"
+                android:textColor="#ffffff"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/woman"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:minHeight="48dp"
+            android:text="@string/yourNationality"
+            android:textColor="#ffffff"
+            android:textColorHint="#546E7A"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:entries="@array/nationality"
+            android:minHeight="48dp" />
+
+        <CheckBox
+            android:id="@+id/cookie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/acceptCookie"
+            android:textColor="#ffffff" />
+
+        <CheckBox
+            android:id="@+id/catchInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/acceptInfo"
+            android:textColor="#ffffff" />
+
+        <CheckBox
+            android:id="@+id/politicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:onClick="enableButton"
+            android:text="@string/acceptPoliticy"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:onClick="back"
+                android:text="@string/back" />
+
+            <Button
+                android:id="@+id/buttonExit"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:onClick="exit"
+                android:text="@string/exit" />
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:onClick="onResult"
+                android:text="@string/next" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

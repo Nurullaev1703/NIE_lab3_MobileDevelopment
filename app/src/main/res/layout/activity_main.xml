@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:background="@drawable/bg2"
+    android:paddingTop="20sp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#D91A1A"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/welcome"
+        android:layout_marginBottom="40sp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30sp"
+        android:background="#D30CF3"
+        android:gravity="center"
+        android:text="@string/description"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#76FF03" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/clickButtons"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#e4e4e4"
+        android:background="#D30CF3"
+        android:layout_marginBottom="40sp"/>
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="nextActivity"
+        android:text="@string/next" />
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="exit"
+        android:text="@string/exit"/>
+</LinearLayout>

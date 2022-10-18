@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Регистрация в учебное заведение </string>
+    <string name="name">ФИО</string>
+    <string name="hintName">Введите ФИО</string>
+    <string name="gender">Пол:</string>
+    <string name="man">Мужчина</string>
+    <string name="woman">Женщина</string>
+    <string name="acceptPoliticy">Принять политику конфиденциальности</string>
+    <string name="acceptInfo">Разрешить сбор информации</string>
+    <string name="acceptCookie">Использовать файлы Cookie</string>
+    <string name="yourNationality">Ваша национальность</string>
+    <string name="back">Назад</string>
+    <string name="exit">Выход</string>
+    <string name="next">Вперед</string>
+    <string name="result">Ваши данные:</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="description">Данная анкета может получить о вас некоторые данные, пройдите ее</string>
+    <string name="clickButtons">Нажмите кнопку Далее для продолжения</string>
+    <string name="you">Вы:</string>
+    <string name="your_gender">Ваш пол:</string>
+    <string name="your_cookie">Файлы cookie:</string>
+    <string name="your_info">Сбор информации:</string>
+    <string name="your_politicy">Конфиденциальность:</string>
+    <string name="your_nationality">Ваша национальность:</string>
+    <string-array name="nationality">
+        <item>Русский</item>
+        <item>Казах</item>
+        <item>Украинец</item>
+        <item>Немец</item>
+        <item>Другое</item>
+    </string-array>
+</resources>
